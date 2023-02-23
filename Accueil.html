@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<!-- Partie non visible à l'écran -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel House - Restaurant & SPA</title>
+
+    <!-- Notre feuille de style -->
+    <link rel="stylesheet" href="./style-hotel.css">
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Librairie d'icônes font awesome -->
+    <script src="https://kit.fontawesome.com/63562e51ad.js" crossorigin="anonymous"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+
+<!-- Partie visible à l'écran : Contenu + structure -->
+<body>
+    <!-- En tête du site : Barre de navigation -->
+    <header class="sticky-top animate__animated animate__fadeInDown">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!--Logo-->
+            <a class="navbar-brand" href="#"><img src="./img/Logo hotel house.svg" class="img-fluid"></a>
+
+            <!--Bouton Burger menu mobile-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!--Page du menu de navigation-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">L'hôtel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nos Chambres
+                        </a>
+                        <!--Sous-menu des chambres-->
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">La chambre classique</a>
+                            <a class="dropdown-item" href="#">La suite</a>
+                            <a class="dropdown-item" href="#">La chambre confort</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Le restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Le SPA</a>
+                    </li>
+
+                </ul>
+
+                <!-- Bouton de reserve, Compte, Panier-->
+                <a class="btn btn-dark my-2 my-sm-0" href="#" role="button">Réserver</a>
+                <a class="my-2 my-sm-0 px-4" href="#" role="button"><span class="fa-solid fa-user"></span></a>
+                <a class="my-2 my-sm-0" href="#" role="button"><i class="fa-solid fa-cart-shopping"></i></a>
+
+
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Hero header du site : image d'arrière plan + titre d'accriche + CTA  -->
+    <section class="hero-header d-flex flex-column justify-content-end align-items-center text-center animate__animated animate__fadeIn "> <!-- On ajoute l'image en arrière plan avec du CSS -->
+        <h1 class="animate__animated animate__fadeIn animate__delay-1s"> Le calme en pleine nature </h1>
+        <a class="btn btn-outline-light my-2 my-sm-0 animate__animated animate__heartBeat animate__delay-2s" href="#" role="button">Voir les chambres</a>
+    </section>
+
+
+    <!-- Le contenu principale de notre page -->
+    <main>
+
+        <!-- Section chambres -->
+        <section class="chambres container py-5">
+
+            <!-- Titre de la section -->
+            <div class="row py-4">
+                <h2>Nos chambres</h2>
+            </div>
+
+            <!-- Présentation des chambres -->
+            <div class="row">
+
+                <!-- Colonne 1-->
+                <div class="col-sm">
+                    <!-- Utilisation des cards bootstrap -->
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./img/La chambre Classique.jpg" alt="chambre classique">
+                        <div class="card-body">
+                        <h5 class="card-title">La chambre classique</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amen...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonne 2-->
+                <div class="col-sm">
+                    <!-- Utilisation des cards bootstrap -->
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./img/La suite.jpg" alt="suite">
+                        <div class="card-body">
+                        <h5 class="card-title">La suite</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amen...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonne 3-->
+                <div class="col-sm">
+                    <!-- Utilisation des cards bootstrap -->
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./img/La chambre confort.jpg" alt="chambre confort">
+                        <div class="card-body">
+                        <h5 class="card-title">La chambre confort</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amen...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section restaurant -->
+        <section class="restaurant container py-5">
+
+            <div class="row align-items-center">
+
+                <!--  Texte -->
+                <div class="txt col py-4">
+                    <h2>Un restaurant 2 étoiles</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque ipsum in
+                        turpis diam. Et vitae eu diam sit molestie in odio. Libero lorem 
+                        nullam eleifend nullam lorem. Sapien augue diam massa accumsan 
+                        sollicitudin egestas nec aliquam. In vulputate pulvinar pulvinar non. 
+                        Sed quisque pretium quam donec nullam venenatis vestibulum ac posuere.
+                        Adipiscing nulla vestibulum pulvinar netus sit pharetra sit. 
+                        Ornare gravida nec felis adipiscing. Ultrices leo eleifend cras blandit 
+                        in urna sed consectetur vitae.
+                    </p>
+                    <a class="btn btn-dark my-2 my-sm-0" href="#" role="button">Découvrir nos plats</a>
+                </div>
+
+                <!-- Image -->
+                <div class="img col py-4">
+                    <img src="./img/Restaurant Hotel House.png" alt="Restaurant 2 étoiles - Hotel House" >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sesion SPA -->
+        <section class="spa container py-5">
+
+            <div class="row align-items-center">
+
+                <!-- Image -->
+                <div class="img col py-4">
+                    <img src="./img/Spa Hotel House.jpg" alt="SPA - Hotel House">
+                </div>
+
+                <!--  Texte -->
+                <div class="txt col py-4">
+                    <h2>Le spa ultra complet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque ipsum in
+                        turpis diam. Et vitae eu diam sit molestie in odio. Libero lorem 
+                        nullam eleifend nullam lorem. Sapien augue diam massa accumsan 
+                        sollicitudin egestas nec aliquam. In vulputate pulvinar pulvinar non. 
+                        Sed quisque pretium quam donec nullam venenatis vestibulum ac posuere.
+                        Adipiscing nulla vestibulum pulvinar netus sit pharetra sit. 
+                        Ornare gravida nec felis adipiscing. Ultrices leo eleifend cras blandit 
+                        in urna sed consectetur vitae.
+                    </p>
+                    <a class="btn btn-dark my-2 my-sm-0" href="#" role="button">Découvrir nos soins</a>
+                </div>
+                
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pied de page -->
+    <footer class="py-4">
+
+        <div class="container ">
+
+            <!--Logo-->
+            <div class="row justify-content-center pb-4">     
+                <a class="navbar-brand" href="#"><img src="./img/Logo Hotel House - blanc.svg" class="img-fluid"></a>
+            </div>
+
+            <!-- 3 colonnes -->
+            <div class="row px-0">
+
+                <!-- Colonne 1 - Newsletter-->
+                <div class="col-sm text-center pb-5">
+
+                    <div>
+                        <div class="thumbnail center well well-small">
+                            <h2>Newsletter</h2>
+                            
+                            <p>Abonnez-vous à notre newsletter pour recevoir nos actus et promotions.</p>
+                            
+                            <form action="" method="post">
+                                <div class="input-prepend"><span class="add-on"><i class="fa-solid fa-envelope"></i></span>
+                                    <input type="text" id="" name="" placeholder="adresse@mail.com">
+                                </div>
+                                <br />
+                                <input type="submit" value="S'abonner" class="btn btn-large" />
+                            </form>
+                        </div>    
+                    </div>
+
+                </div>
+
+                <!-- Colonne 2 - Pages du site -->
+                <div class="col-sm  text-center pb-5">
+                    
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">L'hôtel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nos chambres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Le restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Le SPA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Actualités</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Avis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+                <!-- Colonne 3 - Pages légales + Menu langues -->
+                <div class="col-sm text-center">
+
+                    <ul class="nav flex-column pb-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Plan du site</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Mentions légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CGV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Politiques de privacité</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Politiques des cookies</a>
+                        </li>
+                    </ul>
+
+                    <!--Langue du site-->
+                    <div class="dropdown ">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FR
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">EN</a>
+                            <a class="dropdown-item" href="#">ES</a>
+                            <a class="dropdown-item" href="#">IT</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Autheur -->
+            <div class="row text-dark justify-content-center">
+                <p>Fait avec ♥ par <a style="color: rgba(255, 255, 255, 0.233);text-decoration: underline;" href="https://webbybooster.com" target="_blank">Cindy Carrillo</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
